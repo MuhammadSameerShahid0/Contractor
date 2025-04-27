@@ -826,3 +826,34 @@ closeBtn.onclick = function() {
 document.querySelectorAll('.gallery-img').forEach(image => {
     image.addEventListener('click', openModal);
 });
+
+
+
+// brands we collabrated with js 
+
+const slider = document.querySelector('.brands-section-home-slider');
+const items = document.querySelectorAll('.brands-section-home-item');
+const totalItems = items.length;
+let currentIndex = 0;
+
+// Function to slide the carousel
+function slideCarousel() {
+  if (currentIndex >= totalItems) {
+    // Reset the position to the start once the first set finishes
+    slider.style.transition = 'none';
+    slider.style.transform = 'translateX(0)';
+    currentIndex = 0;
+
+    // Wait for the reset to complete before enabling transition again
+    setTimeout(() => {
+      slider.style.transition = 'transform 0.5s ease-in-out';
+    }, 50);
+  } else {
+    currentIndex++;
+    const offset = -currentIndex * (items[0].offsetWidth + 30); // 30px for margin between items
+    slider.style.transform = `translateX(${offset}px)`;
+  }
+}
+
+// Auto-slide every 3 seconds
+setInterval(slideCarousel, 3000);

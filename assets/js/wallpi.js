@@ -804,28 +804,7 @@
 })(jQuery);
 
 
-// Modal functionality
-const modal = document.getElementById('gallery-modal');
-const modalImg = document.getElementById('modal-img');
-const captionText = document.getElementById('caption');
-const closeBtn = document.getElementsByClassName('gallery-close')[0];
 
-// Function to open the modal and display the clicked image
-function openModal(event) {
-    modal.style.display = "block";
-    modalImg.src = event.target.src;
-    captionText.innerHTML = event.target.alt;
-}
-
-// Function to close the modal
-closeBtn.onclick = function() {
-    modal.style.display = "none";
-}
-
-// Add event listeners to gallery images
-document.querySelectorAll('.gallery-img').forEach(image => {
-    image.addEventListener('click', openModal);
-});
 
 
 
@@ -857,3 +836,20 @@ function slideCarousel() {
 
 // Auto-slide every 3 seconds
 setInterval(slideCarousel, 3000);
+
+
+
+// styles section script 
+
+
+// Optional: Add an animation or hover effects for cards
+const styleCards = document.querySelectorAll('.style-card');
+
+styleCards.forEach(card => {
+  card.addEventListener('mouseover', () => {
+    card.style.transform = 'scale(1.1)';
+  });
+  card.addEventListener('mouseout', () => {
+    card.style.transform = 'scale(1)';
+  });
+});

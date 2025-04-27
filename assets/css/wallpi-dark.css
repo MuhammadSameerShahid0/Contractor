@@ -1,0 +1,17 @@
+:root {
+  --wallpi-border-color: #2f2d30;
+  --wallpi-border-color-rgb: 47, 45, 48;
+  --wallpi-text: #2a2826;
+  --wallpi-text-white: #fff;
+  --wallpi-text-white2: #d3d0cd;
+  --wallpi-text-dark2-white: #bdbdbc;
+  --wallpi-base: #d18548;
+  --wallpi-gray: #f9f6f1;
+  --wallpi-white: #000;
+  --wallpi-black: #fff;
+  --wallpi-black2: #f9f6f1;
+  --wallpi-black3: #d3d0cd;
+  --wallpi-black4: #d3d0cd;
+  --wallpi-gray: #716a63;
+}
+/*# sourceMappingURL=wallpi-dark.css.map */

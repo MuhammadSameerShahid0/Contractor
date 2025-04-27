@@ -10832,7 +10832,6 @@ body.megamenu-popup-active .mobile-nav__content {
   object-fit: cover;
   transition: 0.5s;
   background-size: cover;
-  filter: invert(0) grayscale(1) !important;
 }
 .main-slider-two__bg img:nth-child(1) {
   transform: translatex(50%) scalex(2);

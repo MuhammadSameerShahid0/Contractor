@@ -802,3 +802,27 @@
     wallpi_stretch();
   });
 })(jQuery);
+
+
+// Modal functionality
+const modal = document.getElementById('gallery-modal');
+const modalImg = document.getElementById('modal-img');
+const captionText = document.getElementById('caption');
+const closeBtn = document.getElementsByClassName('gallery-close')[0];
+
+// Function to open the modal and display the clicked image
+function openModal(event) {
+    modal.style.display = "block";
+    modalImg.src = event.target.src;
+    captionText.innerHTML = event.target.alt;
+}
+
+// Function to close the modal
+closeBtn.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Add event listeners to gallery images
+document.querySelectorAll('.gallery-img').forEach(image => {
+    image.addEventListener('click', openModal);
+});

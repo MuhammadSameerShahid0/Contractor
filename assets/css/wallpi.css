@@ -14542,12 +14542,12 @@ body.boxed-wrapper .main-slider-one__carousel.owl-carousel .owl-nav {
   max-width: 855px;
 }
 .popular-project-one__info {
-  background-image: url("../images/resources/popular-project1-1.jpg");
+  background-image: url("../images/resources/Painterly\ and\ distinctive\ wallpaper\ and\ fabric\ for\ the\ best\ interiors\ in\ the\ world.png");
   background-position: center top 40%;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(234, 234, 234, 0.9);
-  background-blend-mode: overlay;
+  background-blend-mode: normal;
   border: 1px solid rgba(var(--wallpi-base-rgb, 209, 133, 72), 0.2);
   border-radius: 4px;
   padding: 40px 20px 35px 20px;
@@ -14559,7 +14559,7 @@ body.boxed-wrapper .main-slider-one__carousel.owl-carousel .owl-nav {
 }
 .popular-project-one__text {
   text-align: center;
-  color: var(--wallpi-text, #2a2826);
+  color: white;
   font-family: var(--wallpi-heading-font, "Pathway Extreme", sans-serif);
   font-weight: 600;
   font-size: 20px;

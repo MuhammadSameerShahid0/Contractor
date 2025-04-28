@@ -47,7 +47,7 @@
   --wallpi-white-rgb: 255, 255, 255;
   --wallpi-black: #2a2826;
   --wallpi-black-rgb: 42, 40, 38;
-  --wallpi-black2: #4a3626;
+  --wallpi-black2: #48bed1;
   --wallpi-black2-rgb: 74, 54, 38;
   --wallpi-black3: #000;
   --wallpi-black3-rgb: 0, 0, 0;
@@ -4453,6 +4453,13 @@ body.megamenu-popup-active .mobile-nav__content {
 /*--------------------------------------------------------------
 # Funfact
 --------------------------------------------------------------*/
+
+section.funfact-one.funfact-one--two {
+  background: #123d4440;
+  margin-bottom: 0px;
+  margin-top: 50px !important;
+}
+
 .funfact-one {
   padding: 120px 20px;
   margin-bottom: -244px;
@@ -4616,6 +4623,7 @@ body.megamenu-popup-active .mobile-nav__content {
   background-blend-mode: overlay;
   padding-top: 42px;
   padding-bottom: 36px;
+  border-radius: 10px;
 }
 @media (max-width: 991px) {
   .funfact-one--two .funfact-one__item {
@@ -15942,6 +15950,7 @@ body {
   text-align: center;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
 }
 
 .style-card:hover {
@@ -15960,8 +15969,9 @@ body {
 .style-name {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #48bed1;
+  color: #fff;
 }
+
 
 .style-description {
   font-size: 1rem;

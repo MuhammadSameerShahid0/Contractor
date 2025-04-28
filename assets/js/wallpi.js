@@ -812,30 +812,31 @@
 
 const slider = document.querySelector('.brands-section-home-slider');
 const items = document.querySelectorAll('.brands-section-home-item');
-const totalItems = items.length;
-let currentIndex = 0;
+const itemWidth = items[0].offsetWidth + 30; // 15px margin on both sides = 30px total
+let position = 0;
 
-// Function to slide the carousel
+// Clone all items for infinite loop effect
+items.forEach(item => {
+  const clone = item.cloneNode(true);
+  slider.appendChild(clone);
+});
+
+let totalWidth = (items.length * itemWidth); // Total width for the original items
+
 function slideCarousel() {
-  if (currentIndex >= totalItems) {
-    // Reset the position to the start once the first set finishes
-    slider.style.transition = 'none';
-    slider.style.transform = 'translateX(0)';
-    currentIndex = 0;
+  position -= 1; // Move 1px to left
+  slider.style.transform = `translateX(${position}px)`;
 
-    // Wait for the reset to complete before enabling transition again
-    setTimeout(() => {
-      slider.style.transition = 'transform 0.5s ease-in-out';
-    }, 50);
-  } else {
-    currentIndex++;
-    const offset = -currentIndex * (items[0].offsetWidth + 30); // 30px for margin between items
-    slider.style.transform = `translateX(${offset}px)`;
+  // If the position goes beyond the original total width (meaning all items are off-screen)
+  if (Math.abs(position) >= totalWidth) {
+    position = 0; // Reset to the beginning smoothly
   }
+
+  requestAnimationFrame(slideCarousel);
 }
 
-// Auto-slide every 3 seconds
-setInterval(slideCarousel, 3000);
+// Start the carousel
+slideCarousel();
 
 
 

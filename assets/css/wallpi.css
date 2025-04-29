@@ -2672,7 +2672,7 @@ h6 {
 }
 .address-one__wrap {
   background-color: #48bed1;
-  padding: 62px 25px 65px 25px;
+  padding: 20px;
 }
 @media (max-width: 767px) {
   .address-one__wrap {

@@ -10769,7 +10769,7 @@ section.funfact-one.funfact-one--two {
   background-color: var(--wallpi-gray, #f9f6f1);
   position: relative;
   z-index: 3;
-  padding-top: 250px;
+  padding-top: 100px;
   padding-bottom: 192px;
   overflow: hidden;
 }

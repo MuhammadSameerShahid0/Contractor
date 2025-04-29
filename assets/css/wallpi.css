@@ -2789,13 +2789,12 @@ h6 {
   left: 0;
   top: 0;
   z-index: 1;
-  background-image: url("../images/backgrounds/contact-bg1-1.jpg");
+  background-image: url("../images/backgrounds/Contact-bg.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  mix-blend-mode: luminosity;
   background-color: rgba(var(--wallpi-black2-rgb, 74, 54, 38), 0.9);
-  background-blend-mode: overlay;
+
 }
 @media (max-width: 1200px) {
   .contact-one .container {
@@ -4616,11 +4615,11 @@ section.funfact-one.funfact-one--two {
 }
 .funfact-one--two .funfact-one__item {
   width: calc((100% - 60px) / 3);
-  background-image: url("../images/resources/funfactbg1-1.jpg");
+  background-image: url("../images/resources/100\ satisfactioon.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #f3ede8;
-  background-blend-mode: overlay;
+  background-blend-mode: soft-light;
   padding-top: 42px;
   padding-bottom: 36px;
   border-radius: 10px;
@@ -10076,7 +10075,6 @@ section.funfact-one.funfact-one--two {
   background-position: center center;
   background-color: #35302e;
   background-blend-mode: overlay;
-  filter: brightness(1) grayscale(1);
 }
 .page-header .container {
   position: relative;

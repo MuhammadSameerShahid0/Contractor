@@ -16274,10 +16274,7 @@ width: 250px;
   justify-content: space-between;
 }
 
-.body{
-  padding-left: 5px;
-  padding-right: 5px;
-}
+
 
 
 .brands-section-home-title{
@@ -16340,6 +16337,18 @@ section#styles .styles-container {
 
 }
 
+
+
+@media screen and (min-width: 280px) and (max-width: 999px) {
+  /* Styles for tablets or medium devices */
+
+  .body{
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+
+
+}
 
 
 /* Mobile view starts here  */

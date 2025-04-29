@@ -2789,10 +2789,11 @@ h6 {
   left: 0;
   top: 0;
   z-index: 1;
-  background-image: url("../images/backgrounds/Contact-bg.png");
+  background-image: url("../images/backgrounds/Contact\ bg\ 2.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  backdrop-filter: initial;
   background-color: rgba(var(--wallpi-black2-rgb, 74, 54, 38), 0.9);
 
 }

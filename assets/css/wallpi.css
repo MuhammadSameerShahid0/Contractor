@@ -16261,6 +16261,41 @@ width: 250px;
 }
 
 
+/* icons size for desktop view starts  */
+
+.fa-paint-roller:before, .fa-brush:before, .fa-city:before, .fa-home:before {
+  font-size: 35px;
+}
+
+.fa-paint-roller:hover, .fa-brush:hover, .fa-city:hover, .fa-home:hover{
+  color: #fff;
+}
+
+.fa-user-clock:before {
+  content: "\f4fd";
+  color: var(--wallpi-white, #fff);
+  font-size: 52px;
+  line-height: 1;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  background-color: var(--wallpi-base, #d18548);
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  display: flex
+;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-shadow: inset 0px 0px 10px 0px rgba(255, 255, 255, 0.35);
+  box-shadow: inset 0px 0px 10px 0px rgba(255, 255, 255, 0.35);
+  margin-bottom: 21px;
+}
+.fa-user-clock:hover{
+  scale: 1.1;
+}
+/* icons size for desktop view ends  */
+
 
 /* Mobile view starts here  */
 

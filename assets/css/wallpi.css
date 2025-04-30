@@ -4636,13 +4636,17 @@ section.funfact-one.funfact-one--two {
 }
 .funfact-one--aboutpage {
   padding-top: 117px;
-  padding-bottom: 90px;
+  padding-bottom: 160px;
 }
 @media (max-width: 991px) {
   .funfact-one--aboutpage {
     padding-top: 72px;
     padding-bottom: 20px;
   }
+}
+
+section.page-header.\@\@ExtraClass.aboutpage {
+  padding: 50px;
 }
 
 /*--------------------------------------------------------------

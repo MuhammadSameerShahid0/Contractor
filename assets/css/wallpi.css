@@ -4641,7 +4641,7 @@ section.funfact-one.funfact-one--two {
 @media (max-width: 991px) {
   .funfact-one--aboutpage {
     padding-top: 72px;
-    padding-bottom: 20px;
+    padding-bottom: 160;
   }
 }
 
@@ -16294,6 +16294,11 @@ width: 250px;
 .fa-user-clock:hover{
   scale: 1.1;
 }
+
+.preloader__image {
+    height: 35px;
+    width: 100px;
+}
 /* icons size for desktop view ends  */
 
 
@@ -16386,6 +16391,18 @@ section#styles .styles-container {
     padding-left: 5px !important;
     padding-right: 5px !important;
   }
+  .about-two__contentcol.wow.fadeInLeft.animated {
+    padding: 28px;
+  }
+  .why-choose-one {
+    background-color: var(--wallpi-white, #fff);
+    padding: 10px;
+  }
+  section#testimonial .container .row {
+    padding: 10px;
+}
+
+
 
 
 }

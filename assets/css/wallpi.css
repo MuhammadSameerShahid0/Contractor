@@ -4458,6 +4458,7 @@ section.funfact-one.funfact-one--two {
   background: #123d4440;
   margin-bottom: 0px;
   margin-top: 50px !important;
+  background-image: url(/assets/images/general-images/general-1.jpeg);
 }
 
 .funfact-one {
@@ -12414,7 +12415,7 @@ section.page-header.\@\@ExtraClass.aboutpage {
 
 
 span.icon-img-home img {
-  height: 60px;
+  height: 50px;
   width: 100%;
 }
 
@@ -12603,7 +12604,7 @@ span.icon-img-home img {
   margin-bottom: 0;
 }
 .service-one__item:hover img {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .service-one__item:hover .service-one__item__icon {
   background-color: var(--wallpi-base, #d18548);
@@ -16316,14 +16317,27 @@ width: 250px;
 
 
 
+/* Desktop view fixing  */
+@media(min-width: 1000px) {
+
+  .service-one__item__image > img{
+    height: 350px;
+  }
+  .project-one__item__image > img {
+    width: 100% !important;
+    height: 430px;
+  }
 
 
+
+}
 
 
 
 /* Mobile view starts here  */
 
 @media(max-width: 999px) {
+ 
  
   ul.main-menu__list.one-page-scroll-menu{
     display: block !important;

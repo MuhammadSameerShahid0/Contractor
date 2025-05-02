@@ -12449,6 +12449,12 @@ span.icon-img-home img {
   padding-bottom: 120px;
 }
 @media (max-width: 991px) {
+  section#services {
+    padding: 5px;
+}
+section#portfolio {
+  padding: 5px;
+}
   .service-one {
     padding-top: 58px;
     padding-bottom: 78px;
@@ -12556,7 +12562,7 @@ span.icon-img-home img {
 }
 @media (max-width: 767px) {
   .service-one__item__image > img {
-    max-height: 400px;
+    max-height: 100%;
     min-height: 400px;
     object-fit: cover;
   }
@@ -16336,11 +16342,26 @@ width: 250px;
 }
 /* icons size for desktop view ends  */
 
+/* Desktop view changes starts here  */
 
 
+@media(min-width: 1000px) {
 
+  .service-one__item__image > img {
+    width: 100% !important;
+    transition: all 0.5s ease;
+    height: 405px;
+    
+}
 
+.project-one__item__image > img {
+  width: 100% !important;
+  height: 400px;
+}
 
+}
+
+/* Desktop view changes ends here  */
 
 
 
@@ -16349,6 +16370,18 @@ width: 250px;
 /* Mobile view starts here  */
 
 @media(max-width: 999px) {
+ 
+ 
+ 
+ 
+  .brands-section-home-item img{
+    height: 75px;
+  }
+ 
+  .project-one__item__image > img {
+    width: 100% !important;
+    height: 400px;
+  }
  
   ul.main-menu__list.one-page-scroll-menu{
     display: block !important;
@@ -16418,6 +16451,9 @@ section#styles .styles-container {
 }
 .main-header__logo {
   width: 50% !important;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 

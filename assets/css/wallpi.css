@@ -16456,6 +16456,9 @@ section#styles .styles-container {
   align-items: center;
 }
 
+a.footer-widget__col__content__logo.footer-margin-added-for-mobile-view {
+  margin-top: 77px;
+}
 
 
 
